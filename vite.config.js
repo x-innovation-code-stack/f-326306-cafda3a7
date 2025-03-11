@@ -9,9 +9,10 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+    extensions: ['.js', '.jsx', '.ts', '.tsx'] // Add support for JSX files
   },
   server: {
-    port: 3000,
+    port: 8080,
   },
   build: {
     outDir: 'build',
